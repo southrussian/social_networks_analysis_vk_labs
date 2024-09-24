@@ -1,5 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import time
 
 # Параметры модели Уоттса-Строгатца
 n = 100  # количество узлов
@@ -17,6 +18,7 @@ def draw_graph(G):
 
 
 draw_graph(ws_model)
+time.sleep(5)
 
 print(f"Средняя степень узлов: {sum(dict(ws_model.degree()).values())/n}")
 print(f"Средняя длина пути: {nx.average_shortest_path_length(ws_model)}")

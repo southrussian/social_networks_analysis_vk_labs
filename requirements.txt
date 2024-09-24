@@ -1,0 +1,6 @@
+networkx
+matplotlib
+numpy
+vk_api
+powerlaw
+pandas
